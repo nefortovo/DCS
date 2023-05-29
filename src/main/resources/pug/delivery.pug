@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Поставка
+        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='css/delivery.css')
+    body
+        include header
+        .connect
+            .container
+                .connect-inner
+                    .connect-left
+                        .connect-inf
+                            .connect-text
+                                | Поставка лифтового
+                                | оборудования.
+                            .connect-btn
+                                a(href='home#request') Связаться с нами
+                    .connect-right
+                        .connect-img
+                            img(src='images/delivery/delivery.png' alt='delivery')
+        // About Service
+        .service
+            .container
+                .service-inner
+                    .service-title
+                        img(src='images/delivery/service-vector.png' alt='')
+                        .service-subtitle Об услуге
+                    .service-text
+                        | Нашей компанией выполняется профессиональная транспортировка заказанного лифта до объекта заказчика в
+                        | Благовещенске. Возможна доставка лифтового оборудования любого типа, вне зависимости от его веса,
+                        | размеров и иных специфических особенностей. Перевозка осуществляется с использованием подходящих
+                        | для этого специальных транспортных средств.
+        // equipment
+        .equipment
+            .container
+                .equipment-inner
+                    .equipment-title
+                        img(src='images/delivery/equipment-vector.png' alt='')
+                        .service-subtitle Типы оборудования
+                    .equipment-list
+                        ul.list
+                            li Грузовые лифты
+                            li Пассажирские лифты
+                            li Лифты для ММГН
+                            li Подъёмники грузовые
+                            li Платформы для ММГН
+                    .equipment-catalog
+                        a.catalog-btn(href='') Посмотреть подробный каталог
+                    .equipment-about
+                        | Наша компания сотрудничает исключительно с проверенными производителями, что позволяет гарантиро -
+                        | вать надё
+                        | жность и безопасность каждого оборудования. При этом мы осуществляем
+                        | поставку лифтов разной грузоподъемности.
+        // WORK
+        .work
+            .container
+                .work-inner
+                    .work-title
+                        img(src='images/delivery/work-vector.png' alt='')
+                        .work-subtitle Как мы работаем
+                    .work-way
+                        img.work-img(src='images/delivery/work.png' alt='')
+        // FOOTER
+        include footer

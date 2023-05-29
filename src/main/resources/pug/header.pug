@@ -1,0 +1,16 @@
+header.header
+    .container
+        .header-inner
+            .logo
+                a(href='home')
+                    img(src='images/main/logo.svg' alt='')
+            nav.nav-inner
+                //a.nav-item(href='catalog') Каталог
+                //a.nav-item(href='about_us') О нас
+                .dropdown
+                    button.nav-dropitem.dropbtn Услуги
+                    .dropdown-content
+                        a.nav-dropitem(href='delivery') Поставка
+                        a.nav-dropitem(href='repair') Ремонт
+                        a.nav-dropitem(href='serving') Обслуживание
+                        a.nav-dropitem(href='building') Монтаж

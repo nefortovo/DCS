@@ -1,0 +1,84 @@
+.header {
+  display: block;
+  padding-top: 70px;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  margin-left: 80px;
+}
+
+.nav-inner a {
+  float: left;
+}
+
+.nav-item {
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: "Sofia Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 36px;
+  color: #000;
+  margin-right: 70px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  padding: 2.5px 15px;
+  border: none;
+  background: none;
+}
+.nav-item:hover {
+  background: #3EB489;
+  border-radius: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown button {
+  margin-right: 0;
+}
+.dropdown:hover {
+  background: #3EB489;
+  border-radius: 20px 20px 0 0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  background: #3EB489;
+  border-radius: 0 20px 20px 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 5px 0;
+}
+
+.nav-dropitem {
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: "Sofia Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 36px;
+  color: #000;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+}
+.nav-dropitem:first-child {
+  padding: 2.5px 15px;
+}

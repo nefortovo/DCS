@@ -1,0 +1,87 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        title Liftkom
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='css/main.css')
+    body
+        // HEADER
+        include header
+        .connect
+            .container
+                .connect-inner
+                    .connect-left
+                        .connect-inf
+                            .connect-text Занимаемся установкой и настройкой лифтового оборудования с 2007 года.
+                            .connect-btn
+                                a(href='#request') Связаться с нами
+                    .connect-right
+                        .connect-img
+                            img(src='images/main/picture_first_page.png' alt='lift')
+        // SERVICE
+        .service
+            .container
+                .service-inner
+                    .service-title
+                        img.img-subtitle(src='images/main/service-vector.png' alt='')
+                        .service-subtitle Наши услуги
+                    .service-cards
+                        .card
+                            .card-img
+                                img(src='images/main/truck%20icon.png' alt='')
+                            .card-text Поставка подъёмного оборудования
+                            a.card-info(href='delivery') Подробнее
+                        .card
+                            .card-img
+                                img(src='images/main/repair%20icon.png' alt='')
+                            .card-text Ремонт
+                            a.card-info(href='repair') Подробнее
+                        .card
+                            .card-img
+                                img(src='images/main/serving%20icon.png' alt='')
+                            .card-text Обслуживание
+                            a.card-info(href='serving') Подробнее
+                        .card
+                            .card-img
+                                img(src='images/main/building%20icon.png' alt='')
+                            .card-text Монтаж, <br> пусконаладка
+                            a.card-info(href='building') Подробнее
+        // About Company
+        .company
+            .container
+                .company-inner
+                    .company-title
+                        img.company-vector(src='images/main/company-vector.png' alt='')
+                        .company-subtitle О компании
+                    .company-text
+                        | Компания ЛИФТКОМ с 2007 г. занимается полным спектром услуг в работе с подъемной техникой. Организует поставку подъемного оборудования российского и зарубежного производства. Мы работаем напрямую с заводами изготовителями, благодаря нашим соглашениям мы предлагаем самые интересные варианты сотрудничества, обеспечиваем установку подъемной техники: лифтов, эскалаторов, траволаторов, подъемников, инвалидных подъемников, вводим технику в эксплуатацию.
+        // Request
+        .request
+            .container
+                .request-title
+                    img.request-vector(src='images/main/query-vector.png' alt='')
+                    .request-subtitle Оставить заявку
+                .request-inner
+                    form.request-politics(id='request' action='/make_order' method='post')
+                        .request-left
+                            .request-form(action='')
+                                input#name(type='text' placeholder='Ваше имя' name='name' maxlength="15")
+                                input#phone(type='text' placeholder='Ваш телефон' name='phone')
+                        .request-right
+                            // Здесь нужен текст со ссылкой на согласие
+                            label.text-politics
+                                | Отправляя форму, Вы даёте своё
+                                a.accept-politics(href='')
+                                    | согласие
+                                    | на обработку персональных данных
+                                input#politics.check-input(type='checkbox' onclick='check()' value='1' autocomplete='off')
+                                //span.check-box
+                            input#submit.submit(type='submit' name='submit' disabled='' value='Заказать звонок')
+        // Footer
+        include footer
+        script(src='https://unpkg.com/imask')
+        script(src='js/main.js')

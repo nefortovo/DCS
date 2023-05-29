@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x:hidden;
+    background-image: url(../images/main/bg.png);
+    font-family: 'Sofia Sans', sans-serif;
+    background-size: cover;
+}
+
+
+//HEADER
+ @import "header";
+
+//CONNECT
+.connect {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.connect-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect-text {
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    font-size:calc(28px + 20 * (100vw - 360px) / 1920);
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+}
+
+.connect-left {
+    display: flex;
+    //text-align: center;
+    flex-wrap: nowrap;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+        font-family: 'Sofia Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 36px;
+        color: #000;
+        transition: 0.2s linear;
+        padding: 12px 70px;
+        border: none;
+        background: none;
+        background: #3EB489;
+        border-radius: 50px;
+    }
+}
+
+.connect-btn {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.connect-right {
+    position: relative;
+}
+
+.connect-img {
+    img{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+
+//SERVICE
+.service {
+    margin-top: 30%;
+}
+
+.service-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.service-subtitle {
+    position: absolute;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.img-subtitle {}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.card-text {
+    height: 100px;
+    margin-top: 40px;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.card-info {
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: none;
+    text-decoration: none;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    background: #3EB489;
+    padding: 4px 40px;
+    border-radius: 50px;
+}
+
+//Company
+.company {
+    margin-top: 80px;
+}
+
+.company-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.company-vector {
+    width: 360px;
+    height: 140px;
+}
+
+.company-subtitle {
+    position: absolute;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.company-text {
+    margin-top: 20px;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    font-size:calc(22px + 8 * (100vw - 360px) / 1920);
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+}
+
+//Request
+.request {
+    margin-top: 50px;
+}
+
+.request-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.request-vector {}
+
+.request-subtitle {
+    position: absolute;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.request-inner {
+    //    display: flex;
+    //    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.request-left {
+
+}
+
+.request-form {
+    display: block;
+    input {
+        border-radius: 50px;
+        width: 480px;
+        height: 60px;
+        padding-left: 55px;
+        font-family: 'Sofia Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+        opacity: 0.5;
+
+        &:last-child {
+            margin-top: 50px;
+        }
+    }
+}
+
+.request-right {
+    text-align: center;
+    width: 50%;
+}
+
+.text-politics {
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+}
+
+.check-box {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #3EB489;
+    border-radius: 50%;
+}
+
+.check-input {
+    //appearance: none;
+    width: 10mm;
+    height: 10mm;
+    border: 0.1mm solid black;
+    &:checked ~ .checkbox {
+        background-image: url(../images/main/checkbox.svg);
+    }
+}
+
+.request-politics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    input[type="submit"] {
+        font-family: 'Sofia Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 54px;
+        text-align: center;
+        color: #000000;
+        padding: 5px 80px;
+        background: #3EB489;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .request-politics {
+        flex-wrap: wrap;
+    }
+
+    .request-left {
+        width: 100%;
+    }
+
+    .request-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            &:last-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .request-right{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .request-form {
+        flex-wrap: wrap;
+
+        input {
+            &:last-child {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+//footer
+@import "footer";
+
+
+

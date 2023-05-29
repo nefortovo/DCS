@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/main/bg.png);
+    font-family: 'Sofia Sans', sans-serif;
+    background-size: cover;
+}
+
+
+//HEADER
+@import "header";
+
+//CONNECT
+.connect {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.connect-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect-text {
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    font-size:calc(28px + 20 * (100vw - 360px) / 1920);
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+}
+
+.connect-left {
+    display: flex;
+    //text-align: center;
+    flex-wrap: nowrap;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+        font-family: 'Sofia Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 36px;
+        color: #000;
+        transition: 0.2s linear;
+        padding: 12px 70px;
+        border: none;
+        background: none;
+        background: #3EB489;
+        border-radius: 50px;
+    }
+}
+
+.connect-btn {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.connect-right {
+    position: relative;
+}
+
+.connect-img {
+    img{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+//About service
+.service {
+    margin-top: 30%;
+    //    padding: 0 150px;
+}
+
+.service-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.service-subtitle {
+    position: absolute;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.service-text {
+    margin-top: 25px;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+}
+
+//Equipment
+.equipment {
+    margin-top: 60px;
+}
+
+.equipment-inner {
+    position: relative;
+}
+
+.equipment-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.equipment-subtitle {
+    position: absolute;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.equipment-list {
+    margin-left: 10%;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 54px;
+    color: #000000;
+
+    ul {
+        li {
+
+            list-style-type: none;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 13px;
+                left: -40px;
+                content: '';
+                width: 28px;
+                height: 28px;
+                background: #3EB489;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.equipment-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.catalog-btn {
+    flex-wrap: nowrap;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #3EB489;
+    border-radius: 50px;
+
+}
+
+.equipment-about {
+    display: block;
+    padding: 0 30px;
+    margin: 50px;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+
+}
+
+//WORK
+
+.work{
+    margin-top: 150px;
+}
+
+.work-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.work-subtitle {
+    position: absolute;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.work-way{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.work-img{
+    width: 100%;
+}
+//FOOTER
+
+@import "footer";

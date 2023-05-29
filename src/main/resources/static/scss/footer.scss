@@ -1,0 +1,144 @@
+.footer {
+    width: 100%;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+
+}
+
+.phone-icon {
+    display: flex;
+    align-items: center;
+}
+
+.contact-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    a {
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: 'Sofia Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+
+
+    }
+}
+
+.geoposition {
+
+}
+
+.geoposition-address {
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.geoposition-inner {
+    display: flex;
+    align-items: center;
+
+}
+
+.email {
+}
+
+.email-inner {
+    display: flex;
+    align-items: center;
+}
+
+.email-icon {
+    display: flex;
+    align-items: center;
+}
+
+.contact-email {
+    a {
+        display: block;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: 'Sofia Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+
+        &:last-child {
+            margin-top: 25px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .footer-inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-item{
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .connect-inner{
+        flex-wrap: wrap;
+    }
+    .connect-left{
+        width: 100%;
+    }
+    .connect-right{
+        margin-top: 10%;
+    }
+
+    .card{
+        margin-top: 10%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-item{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+}

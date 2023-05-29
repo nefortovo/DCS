@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Liftkom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- HEADER-->
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo"><a href="home"><img src="images/main/logo.svg" alt=""></a></div>
+          <nav class="nav-inner">
+            <!--a.nav-item(href='catalog') Каталог-->
+            <!--a.nav-item(href='about_us') О нас-->
+            <div class="dropdown">
+              <button class="nav-dropitem dropbtn">Услуги</button>
+              <div class="dropdown-content"><a class="nav-dropitem" href="delivery">Поставка</a><a class="nav-dropitem" href="repair">Ремонт</a><a class="nav-dropitem" href="serving">Обслуживание</a><a class="nav-dropitem" href="building">Монтаж</a></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="connect">
+      <div class="container">
+        <div class="connect-inner">
+          <div class="connect-left">
+            <div class="connect-inf">
+              <div class="connect-text">Занимаемся установкой и настройкой лифтового оборудования с 2007 года.</div>
+              <div class="connect-btn"><a href="#request">Связаться с нами</a></div>
+            </div>
+          </div>
+          <div class="connect-right">
+            <div class="connect-img"><img src="images/main/picture_first_page.png" alt="lift"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SERVICE-->
+    <div class="service">
+      <div class="container">
+        <div class="service-inner">
+          <div class="service-title"><img class="img-subtitle" src="images/main/service-vector.png" alt="">
+            <div class="service-subtitle">Наши услуги</div>
+          </div>
+          <div class="service-cards">
+            <div class="card">
+              <div class="card-img"><img src="images/main/truck%20icon.png" alt=""></div>
+              <div class="card-text">Поставка подъёмного оборудования</div><a class="card-info" href="delivery">Подробнее</a>
+            </div>
+            <div class="card">
+              <div class="card-img"><img src="images/main/repair%20icon.png" alt=""></div>
+              <div class="card-text">Ремонт</div><a class="card-info" href="repair">Подробнее</a>
+            </div>
+            <div class="card">
+              <div class="card-img"><img src="images/main/serving%20icon.png" alt=""></div>
+              <div class="card-text">Обслуживание</div><a class="card-info" href="serving">Подробнее</a>
+            </div>
+            <div class="card">
+              <div class="card-img"><img src="images/main/building%20icon.png" alt=""></div>
+              <div class="card-text">Монтаж, <br> пусконаладка</div><a class="card-info" href="building">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Company-->
+    <div class="company">
+      <div class="container">
+        <div class="company-inner">
+          <div class="company-title"><img class="company-vector" src="images/main/company-vector.png" alt="">
+            <div class="company-subtitle">О компании</div>
+          </div>
+          <div class="company-text">Компания ЛИФТКОМ с 2007 г. занимается полным спектром услуг в работе с подъемной техникой. Организует поставку подъемного оборудования российского и зарубежного производства. Мы работаем напрямую с заводами изготовителями, благодаря нашим соглашениям мы предлагаем самые интересные варианты сотрудничества, обеспечиваем установку подъемной техники: лифтов, эскалаторов, траволаторов, подъемников, инвалидных подъемников, вводим технику в эксплуатацию.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Request-->
+    <div class="request">
+      <div class="container">
+        <div class="request-title"><img class="request-vector" src="images/main/query-vector.png" alt="">
+          <div class="request-subtitle">Оставить заявку</div>
+        </div>
+        <div class="request-inner">
+          <form class="request-politics" id="request" action="/make_order" method="post">
+            <div class="request-left">
+              <div class="request-form" action="">
+                <input id="name" type="text" placeholder="Ваше имя" name="name" maxlength="15">
+                <input id="phone" type="text" placeholder="Ваш телефон" name="phone">
+              </div>
+            </div>
+            <div class="request-right">
+              <!-- Здесь нужен текст со ссылкой на согласие-->
+              <label class="text-politics">Отправляя форму, Вы даёте своё<a class="accept-politics" href="">
+                  согласие
+                  на обработку персональных данных</a>
+                <input class="check-input" id="politics" type="checkbox" onclick="check()" value="1" autocomplete="off">
+                <!--span.check-box-->
+              </label>
+              <input class="submit" id="submit" type="submit" name="submit" disabled="" value="Заказать звонок">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-item">
+            <div class="footer-logo"><img src="images/main/%D0%9E%D0%9E%D0%9E%20%E2%80%9C%D0%9B%D0%B8%D1%84%D1%82%D0%BA%D0%BE%D0%BC%E2%80%9D.svg" alt=""></div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-phone">
+              <div class="phone-icon"><img src="images/main/phone%20icon.png" alt=""></div>
+              <div class="contact-phone"><a class="phone-accounting" href="tel:8-914-538-77-77">8-914-556-36-76</a></div>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="geoposition">
+              <div class="geoposition-inner">
+                <div class="geo-icon"><img src="images/main/geopoint-icon.png" alt=""></div>
+                <div class="geoposition-address">г. Благовещенск, ул. Чайковского 209</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="email">
+              <div class="email-inner">
+                <div class="email-icon"><img src="images/main/letter%20icon.png" alt=""></div>
+                <div class="contact-email"><a href="mailto:LIFTMONTAZH@gmail.com">LIFTMONTAZH@gmail.com</a><a href="mailto:LIFTMONTAZH@bk.ru">LIFTMONTAZH@bk.ru</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        title Обслуживание
+        link(rel='stylesheet' href='css/serving.css')
+    body
+        include header
+        .connect
+            .container
+                .connect-inner
+                    .connect-left
+                        .connect-inf
+                            .connect-text Обслуживание лифтового оборудования
+                            .connect-btn
+                                a(href='home#request') Связаться с нами
+                    .connect-right
+                        .connect-img
+                            img(src='images/serving/connect.png' alt='lift')
+
+        .service
+            .container
+                .service-inner
+                    .service-title
+                        img(src='images/delivery/service-vector.png' alt='')
+                        .service-subtitle Об услуге
+                    .service-text
+                        | Компания «Лифтком» обслуживает лифтовое и подъемное оборудование в Благовещенске. Качественное тех -
+                        | ническое обслуживание лифтового оборудования — это залог его бесперебойной работы каждый день. Внима -
+                        | тельное отношение к технике специалистов компании продлевает срок службы лифтов.  Благодаря професси -
+                        | онализму наших сотрудников, мы помогаем вовремя заказывать детали для проведения ремонтных работ на
+                        | лифтах наших клиентов. Наша компания работает с разными марками лифтового оборудования российского и
+                        | зарубежного производства
+        .danger-serving
+            .container
+                .danger-inner
+                    .danger-title
+                        img(src='images/serving/danger-serving.png' alt='')
+                        .danger-subtitle Аварийно - техническое <br> обслуживание включает
+                    .serving-list
+                        ul.list
+                            li Проверка и регулировка точности остановок по этажам.
+                            li Контроль (и поддержание в рабочих пределах) уровня масла в редукторе главного привода или гидроагрега - та.
+                            li Регулировка автоматических и неавтоматических замков и контактов дверей шахты и кабины.
+                            li Проверка освещения шахты
+                            li Исследование и регулировка механизма дверей шахты
+                            li Осмотр купе кабины
+                            li Техосмотр состояния балансирной подвески кабины
+                            li Исследование работоспособности вызывных аппаратов по этажам и приказного аппарата в кабине.
+                            li Исследование оборудования, установленного на верхней балке кабины внутри шахты.
+
+        include footer
